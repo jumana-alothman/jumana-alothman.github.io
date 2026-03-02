@@ -1,1 +1,204 @@
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* ===== Body ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f8f6ff, #f3e8ff);
+    color: #444;
+    line-height: 1.8;
+}
+
+/* ===== Header ===== */
+header {
+    background: #6a1b9a;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-weight: 600;
+}
+
+header h2 {
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+/* ===== Navigation ===== */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 10px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* ===== Main Layout ===== */
+main {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* ===== Sections ===== */
+section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    animation: fadeUp 0.8s ease;
+}
+
+/* ===== Articles (Projects) ===== */
+article {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    transition: 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* ===== Images ===== */
+figure {
+    text-align: center;
+    margin-top: 15px;
+}
+
+figure img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+/* ===== Form ===== */
+form {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: none;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #ab47bc;
+    outline: none;
+    box-shadow: 0 0 8px rgba(171,71,188,0.3);
+}
+
+/* ===== Button ===== */
+button {
+    background: #ab47bc;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #8e24aa;
+    transform: scale(1.05);
+}
+
+/* ===== Lists Styling ===== */
+ul, ol, dl {
+    margin-left: 20px;
+}
+
+/* ===== Blockquote ===== */
+blockquote {
+    margin-top: 15px;
+    padding: 15px;
+    background: #f3e5f5;
+    border-left: 5px solid #ab47bc;
+    font-style: italic;
+    border-radius: 8px;
+}
+
+/* ===== Links ===== */
+a {
+    color: #6a1b9a;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #6a1b9a;
+    color: white;
+    margin-top: 40px;
+}
+
+/* ===== Back to Top ===== */
+main > p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ===== Animation ===== */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+}
