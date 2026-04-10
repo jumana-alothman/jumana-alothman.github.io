@@ -1,204 +1,272 @@
-/* ===== Reset ===== */
-* {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* =========================
+   General Page Styling
+   ========================= */
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.8;
+    text-align: left;
+    color: #1f2937;
+    background-color: #f4f7fb;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* ===== Body ===== */
-body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #f8f6ff, #f3e8ff);
-    color: #444;
-    line-height: 1.8;
-}
-
-/* ===== Header ===== */
+/* =========================
+   Header Styling
+   ========================= */
 header {
-    background: #6a1b9a;
+    background: linear-gradient(135deg, #1d4ed8, #2563eb);
     color: white;
-    padding: 30px 20px;
     text-align: center;
+    padding: 2.5rem 1rem;
+    border-bottom: 0.3rem solid #1e3a8a;
 }
 
-header h1 {
+h1 {
+    font-size: 2.3rem;
     font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
-header h2 {
-    font-weight: 300;
-    margin-top: 5px;
-}
-
-/* ===== Navigation ===== */
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    flex-wrap: wrap;
-}
-
-nav ul li {
-    margin: 10px 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
+h2 {
+    font-size: 1.5rem;
     font-weight: 500;
-    padding: 6px 12px;
-    border-radius: 6px;
-    transition: 0.3s;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #1e3a8a;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.12);
 }
 
-nav ul li a:hover {
-    background: rgba(255,255,255,0.2);
+/* =========================
+   Navigation Styling
+   ========================= */
+nav {
+    background-color: rgba(255, 255, 255, 0.15);
+    margin-top: 1.5rem;
+    padding: 0.9rem;
+    border-radius: 0.8rem;
 }
 
-/* ===== Main Layout ===== */
-main {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 20px;
+nav ul {
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
 }
 
-/* ===== Sections ===== */
-section {
-    background: white;
-    padding: 30px;
-    margin-bottom: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-    animation: fadeUp 0.8s ease;
+nav li {
+    display: inline-block;
+    margin: 0 0.8rem;
 }
 
-/* ===== Articles (Projects) ===== */
-article {
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-    margin-bottom: 30px;
-    transition: 0.3s ease;
-}
-
-article:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-}
-
-/* ===== Images ===== */
-figure {
-    text-align: center;
-    margin-top: 15px;
-}
-
-figure img {
-    max-width: 100%;
-    border-radius: 12px;
-}
-
-/* ===== Form ===== */
-form {
-    margin-top: 20px;
-}
-
-fieldset {
-    border: none;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0 15px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    font-family: inherit;
-    transition: 0.3s;
-}
-
-input:focus, textarea:focus {
-    border-color: #ab47bc;
-    outline: none;
-    box-shadow: 0 0 8px rgba(171,71,188,0.3);
-}
-
-/* ===== Button ===== */
-button {
-    background: #ab47bc;
+nav a {
     color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.5rem;
 }
 
-button:hover {
-    background: #8e24aa;
-    transform: scale(1.05);
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* ===== Lists Styling ===== */
-ul, ol, dl {
-    margin-left: 20px;
+/* =========================
+   Main Content Layout
+   ========================= */
+main {
+    width: 85%;
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
 
-/* ===== Blockquote ===== */
-blockquote {
-    margin-top: 15px;
-    padding: 15px;
-    background: #f3e5f5;
-    border-left: 5px solid #ab47bc;
-    font-style: italic;
-    border-radius: 8px;
+/* تحسين الأقسام */
+section,
+article {
+    background-color: white;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border: 0.08rem solid #dbe4f0;
+    border-radius: 0.9rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.06);
+    
+    /* إضافة المطلوبة */
+    width: 100%;
+    min-height: 12rem;
 }
 
-/* ===== Links ===== */
+/* =========================
+   Paragraph Styling
+   ========================= */
+p {
+    font-size: 1rem;
+    margin-top: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+/* =========================
+   Lists Styling
+   ========================= */
+ul {
+    list-style-type: square;
+    list-style-position: inside;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+dl {
+    margin-bottom: 1rem;
+}
+
+dt {
+    font-weight: 600;
+    color: #1d4ed8;
+    margin-top: 0.8rem;
+}
+
+dd {
+    margin-left: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+/* =========================
+   Links Styling
+   ========================= */
 a {
-    color: #6a1b9a;
+    color: #1d4ed8;
+    font-weight: 500;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #1e3a8a;
 }
 
-/* ===== Footer ===== */
+/* =========================
+   Class Selector
+   ========================= */
+.highlight {
+    background-color: #e0f2fe;
+    border-left: 0.3rem solid #0284c7;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+/* =========================
+   ID Selector
+   ========================= */
+#intro {
+    font-style: italic;
+    color: #374151;
+}
+
+/* =========================
+   Images
+   ========================= */
+figure {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.8rem;
+    border: 0.08rem solid #dbe4f0;
+}
+
+figcaption {
+    margin-top: 0.6rem;
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #4b5563;
+}
+
+/* =========================
+   Blockquote
+   ========================= */
+blockquote {
+    margin: 1rem 0;
+    padding: 1rem 1.2rem;
+    background-color: #eff6ff;
+    border-left: 0.3rem solid #2563eb;
+    font-style: italic;
+    border-radius: 0.5rem;
+}
+
+/* =========================
+   Form
+   ========================= */
+fieldset {
+    border: 0.08rem solid #cbd5e1;
+    border-radius: 0.8rem;
+    padding: 1.2rem;
+    background-color: #f8fbff;
+}
+
+legend {
+    font-weight: 600;
+    color: #1e3a8a;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.3rem;
+    border: 0.08rem solid #cbd5e1;
+    border-radius: 0.5rem;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1e40af;
+}
+
+/* =========================
+   Footer
+   ========================= */
 footer {
     text-align: center;
-    padding: 20px;
-    background: #6a1b9a;
+    background-color: #1e3a8a;
     color: white;
-    margin-top: 40px;
+    padding: 1rem;
+    margin-top: 2rem;
 }
 
-/* ===== Back to Top ===== */
-main > p {
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* ===== Animation ===== */
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
+/* =========================
+   Responsive
+   ========================= */
+@media (max-width: 48rem) {
+    nav li {
+        display: block;
+        margin: 0.6rem 0;
     }
 
-    nav ul li {
-        margin: 8px 0;
+    main {
+        width: 92%;
     }
 }
