@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-/* =========================
-   General Page Styling
-   ========================= */
 body {
     font-family: "Poppins", Arial, sans-serif;
     font-size: 1rem;
@@ -16,15 +13,17 @@ body {
     padding: 0;
 }
 
-/* =========================
-   Header Styling
-   ========================= */
 header {
     background: linear-gradient(135deg, #1d4ed8, #2563eb);
     color: white;
     text-align: center;
     padding: 2.5rem 1rem;
     border-bottom: 0.3rem solid #1e3a8a;
+}
+
+header h1,
+header h2 {
+    color: white;
 }
 
 h1 {
@@ -44,9 +43,6 @@ h2 {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* =========================
-   Navigation Styling
-   ========================= */
 nav {
     background-color: rgba(255, 255, 255, 0.15);
     margin-top: 1.5rem;
@@ -79,9 +75,6 @@ nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* =========================
-   Main Content Layout
-   ========================= */
 main {
     width: 85%;
     max-width: 70rem;
@@ -89,7 +82,6 @@ main {
     padding: 0 1rem;
 }
 
-/* تحسين الأقسام */
 section,
 article {
     background-color: white;
@@ -98,24 +90,16 @@ article {
     border: 0.08rem solid #dbe4f0;
     border-radius: 0.9rem;
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.06);
-    
-    /* إضافة المطلوبة */
     width: 100%;
     min-height: 12rem;
 }
 
-/* =========================
-   Paragraph Styling
-   ========================= */
 p {
     font-size: 1rem;
     margin-top: 0.6rem;
     margin-bottom: 1rem;
 }
 
-/* =========================
-   Lists Styling
-   ========================= */
 ul {
     list-style-type: square;
     list-style-position: inside;
@@ -145,9 +129,6 @@ dd {
     margin-bottom: 0.8rem;
 }
 
-/* =========================
-   Links Styling
-   ========================= */
 a {
     color: #1d4ed8;
     font-weight: 500;
@@ -157,9 +138,6 @@ a:hover {
     color: #1e3a8a;
 }
 
-/* =========================
-   Class Selector
-   ========================= */
 .highlight {
     background-color: #e0f2fe;
     border-left: 0.3rem solid #0284c7;
@@ -167,17 +145,11 @@ a:hover {
     border-radius: 0.5rem;
 }
 
-/* =========================
-   ID Selector
-   ========================= */
 #intro {
     font-style: italic;
     color: #374151;
 }
 
-/* =========================
-   Images
-   ========================= */
 figure {
     margin: 1rem 0;
     text-align: center;
@@ -197,9 +169,6 @@ figcaption {
     color: #4b5563;
 }
 
-/* =========================
-   Blockquote
-   ========================= */
 blockquote {
     margin: 1rem 0;
     padding: 1rem 1.2rem;
@@ -209,9 +178,6 @@ blockquote {
     border-radius: 0.5rem;
 }
 
-/* =========================
-   Form
-   ========================= */
 fieldset {
     border: 0.08rem solid #cbd5e1;
     border-radius: 0.8rem;
@@ -231,6 +197,9 @@ textarea {
     margin-top: 0.3rem;
     border: 0.08rem solid #cbd5e1;
     border-radius: 0.5rem;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 1rem;
 }
 
 button {
@@ -240,15 +209,14 @@ button {
     padding: 0.7rem 1rem;
     border-radius: 0.5rem;
     cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
 }
 
 button:hover {
     background-color: #1e40af;
 }
 
-/* =========================
-   Footer
-   ========================= */
 footer {
     text-align: center;
     background-color: #1e3a8a;
@@ -257,9 +225,10 @@ footer {
     margin-top: 2rem;
 }
 
-/* =========================
-   Responsive
-   ========================= */
+footer p {
+    margin: 0;
+}
+
 @media (max-width: 48rem) {
     nav li {
         display: block;
