@@ -47,6 +47,9 @@ function setupBlockquoteEffect() {
 }
 
 window.onload = function() {
-    addLoadMessage();
+    if (document.title === "Jumana | Home") {
+        addLoadMessage();
+    }
+
     setupBlockquoteEffect();
 };
